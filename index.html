@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Imperio Limpio — Mentoría Empresarial para Negocios de Limpieza</title>
+  <meta name="description" content="Un programa de acompañamiento estratégico para dueños y emprendedores de negocios de limpieza que dejan de ser operadores y empiezan a dirigir su empresa." />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/logos/logo_symbol.svg" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Imperio Limpio — Business Academy" />
+  <meta property="og:description" content="Construye la empresa que quieres liderar. Mentoría empresarial y acompañamiento estratégico para negocios de limpieza." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://imperiolimpio.com" />
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="wrap nav-in">
+      <a href="/" style="display: flex; align-items: center; gap: 8px;">
+        <img src="assets/logos/logo_horizontal.svg" alt="Imperio Limpio" style="height: 38px; width: auto;" class="logo-light" />
+        <img src="assets/logos/logo_horizontal_white.svg" alt="Imperio Limpio" style="height: 38px; width: auto; display: none;" class="logo-dark" />
+      </a>
+
+      <div class="navlinks hide-sm" style="margin-left: 12px;">
+        <a href="#programa" class="navlink">El programa</a>
+        <a href="#como" class="navlink">Cómo funciona</a>
+      </div>
+
+      <span style="flex: 1;"></span>
+
+      <!-- Dark mode toggle -->
+      <button class="theme-btn" id="themeToggle" title="Cambiar tema">
+        <svg id="moonIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <svg id="sunIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+      </button>
+
+      <!-- External Links to Aprenzi Platform -->
+      <a href="https://imperio-limpio.aprenzi.com/login" class="btn btn-ghost btn-sm hide-sm">
+        Iniciar sesión
+      </a>
+      <a href="https://imperio-limpio.aprenzi.com/registro" class="btn btn-primary btn-sm">
+        Comenzar
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="wrap" style="padding-top: 64px; padding-bottom: 40px;">
+    <div style="display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center;" class="hero-grid">
+      <div>
+        <div class="pill" style="margin-bottom: 22px;">
+          <span class="dot"></span> Mentoría Empresarial & Acompañamiento Estratégico
+        </div>
+        <h1 style="font-size: clamp(2.6rem, 5.2vw, 4.3rem); line-height: 1.02;">
+          Construye la empresa<br />que quieres <span class="serif-italic" style="color: var(--terra);">liderar</span>.
+        </h1>
+        <p class="lede" style="margin-top: 24px; max-width: 500px;">
+          Un programa de acompañamiento integral para dueños y emprendedores de negocios de limpieza que dejan de ser operadores y empiezan a dirigir su empresa. Clases estratégicas, comunidad y mentoría — a tu ritmo.
+        </p>
+
+        <div style="display: flex; gap: 14px; margin-top: 32px; flex-wrap: wrap;">
+          <a href="https://imperio-limpio.aprenzi.com/registro" class="btn btn-primary btn-lg">
+            Comenzar mi mentoría 
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#como" class="btn btn-ghost btn-lg">
+            Ver cómo funciona
+          </a>
+        </div>
+
+        <!-- Pilares de Formación -->
+        <div style="display: flex; gap: 32px; margin-top: 48px; border-top: 1px solid var(--line); padding-top: 24px; flex-wrap: wrap;">
+          <div>
+            <div style="font-family: var(--display); font-size: 1.2rem; font-weight: 700; color: var(--terra);">Estrategia & Operación</div>
+            <div style="font-size: 0.85rem; color: var(--ink-soft);">Sistemas que funcionan sin ti</div>
+          </div>
+          <div>
+            <div style="font-family: var(--display); font-size: 1.2rem; font-weight: 700; color: var(--forest);">Ventas & Finanzas</div>
+            <div style="font-size: 0.85rem; color: var(--ink-soft);">Contratos de alto valor</div>
+          </div>
+          <div>
+            <div style="font-family: var(--display); font-size: 1.2rem; font-weight: 700; color: var(--terra-deep);">Comunidad en Vivo</div>
+            <div style="font-size: 0.85rem; color: var(--ink-soft);">Acompañamiento continuo</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Card -->
+      <div style="position: relative;">
+        <div class="card" style="padding: 24px; overflow: hidden; border-radius: 24px; box-shadow: var(--shadow-lg);">
+          <img src="assets/images/mujer_lider.png" alt="Empresaria de limpieza" style="border-radius: 16px; width: 100%; height: auto; object-fit: cover;" />
+          <div style="margin-top: 18px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+            <div>
+              <div style="font-weight: 700; font-size: 1rem; color: var(--ink);">Comunidad de Alumnas & Empresarias</div>
+              <div style="font-size: 0.82rem; color: var(--ink-soft);">Sesiones en vivo, recursos prácticos y networking</div>
+            </div>
+            <span class="pill">
+              <span class="dot"></span> Inscripciones Abiertas
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EL ENFOQUE DEL PROGRAMA (Flexible, sin semanas ni módulos fijos) -->
+  <section id="programa" class="wrap" style="padding-top: 64px; padding-bottom: 48px;">
+    <div style="margin-bottom: 36px;">
+      <div class="eyebrow">Acompañamiento Estratégico</div>
+      <h2 style="font-size: clamp(2rem, 3.4vw, 2.7rem); margin-top: 12px;">De operar el día a día a liderar tu empresa</h2>
+      <p class="lede" style="margin-top: 12px; max-width: 680px;">
+        Desarrolla las habilidades y procesos clave para estructurar un negocio rentable, escalable y con equipos alineados.
+      </p>
+    </div>
+
+    <div class="grid-3">
+      <!-- Pilar 1 -->
+      <div class="card" style="padding: 32px 28px; display: flex; flex-direction: column;">
+        <div class="pill" style="align-self: flex-start; margin-bottom: 16px;">
+          <span>Fundamentos & Mentalidad</span>
+        </div>
+        <h3 style="font-size: 1.45rem; line-height: 1.15; color: var(--ink);">Claridad Financiera y Propuesta de Valor</h3>
+        <p style="margin-top: 12px; font-size: 0.95rem; color: var(--ink-soft); flex: 1;">
+          Define tu cliente ideal, estructura tus precios con margen real y establece los números base para operar con total claridad.
+        </p>
+        <div style="display: flex; gap: 8px; margin-top: 22px; flex-wrap: wrap;">
+          <span class="tag">Estructura de costos</span>
+          <span class="tag">Posicionamiento</span>
+        </div>
+      </div>
+
+      <!-- Pilar 2 -->
+      <div class="card" style="padding: 32px 28px; display: flex; flex-direction: column;">
+        <div class="pill" style="align-self: flex-start; margin-bottom: 16px;">
+          <span>Sistemas & Procesos</span>
+        </div>
+        <h3 style="font-size: 1.45rem; line-height: 1.15; color: var(--ink);">Estandarización y Formación de Equipo</h3>
+        <p style="margin-top: 12px; font-size: 0.95rem; color: var(--ink-soft); flex: 1;">
+          Implementa checklists operativos, contrata con criterio y crea manuales de trabajo para que el servicio mantenga su excelencia.
+        </p>
+        <div style="display: flex; gap: 8px; margin-top: 22px; flex-wrap: wrap;">
+          <span class="tag">Delegación</span>
+          <span class="tag">Manuales y protocolos</span>
+        </div>
+      </div>
+
+      <!-- Pilar 3 -->
+      <div class="card" style="padding: 32px 28px; display: flex; flex-direction: column;">
+        <div class="pill" style="align-self: flex-start; margin-bottom: 16px;">
+          <span>Crecimiento & Escala</span>
+        </div>
+        <h3 style="font-size: 1.45rem; line-height: 1.15; color: var(--ink);">Adquisición de Clientes y Contratos</h3>
+        <p style="margin-top: 12px; font-size: 0.95rem; color: var(--ink-soft); flex: 1;">
+          Aprende a captar cuentas comerciales y residenciales recurrentes, cotizar con confianza y acelerar tus ventas.
+        </p>
+        <div style="display: flex; gap: 8px; margin-top: 22px; flex-wrap: wrap;">
+          <span class="tag">Ventas B2B & B2C</span>
+          <span class="tag">Cierre de contratos</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CÓMO FUNCIONA -->
+  <section id="como" class="wrap" style="padding-top: 48px; padding-bottom: 48px;">
+    <div class="card" style="padding: clamp(32px, 4vw, 56px); background: var(--surface-2);">
+      <div style="display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 48px; align-items: center;" class="hero-grid">
+        <div>
+          <div class="eyebrow">Cómo funciona</div>
+          <h2 style="font-size: clamp(1.8rem, 3vw, 2.5rem); margin-top: 14px; color: var(--ink);">
+            Pagas una vez.<br />Avanzas para siempre.
+          </h2>
+          <p class="lede" style="margin-top: 16px;">
+            Sin mensualidades. Accedes al programa, las sesiones en vivo y la comunidad desde el primer día.
+          </p>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          <div style="display: flex; gap: 16px; align-items: flex-start;">
+            <span style="font-family: var(--serif); font-size: 1.4rem; color: var(--terra); width: 32px; flex: none; font-weight: 700;">01</span>
+            <div>
+              <div style="font-weight: 700; font-size: 1.05rem; color: var(--ink);">Acceso integral</div>
+              <div style="font-size: 0.95rem; color: var(--ink-soft); margin-top: 3px;">Una sola inversión para ingresar a la plataforma y todos sus recursos.</div>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 16px; align-items: flex-start;">
+            <span style="font-family: var(--serif); font-size: 1.4rem; color: var(--terra); width: 32px; flex: none; font-weight: 700;">02</span>
+            <div>
+              <div style="font-weight: 700; font-size: 1.05rem; color: var(--ink);">Lecciones y herramientas prácticas</div>
+              <div style="font-size: 0.95rem; color: var(--ink-soft); margin-top: 3px;">Contenido en video y plantillas operativas listas para implementar en tu negocio.</div>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 16px; align-items: flex-start;">
+            <span style="font-family: var(--serif); font-size: 1.4rem; color: var(--terra); width: 32px; flex: none; font-weight: 700;">03</span>
+            <div>
+              <div style="font-weight: 700; font-size: 1.05rem; color: var(--ink);">Comunidad y acompañamiento en vivo</div>
+              <div style="font-size: 0.95rem; color: var(--ink-soft); margin-top: 3px;">Clases en vivo periódicas, retroalimentación y resolución de dudas directas.</div>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 16px; align-items: flex-start;">
+            <span style="font-family: var(--serif); font-size: 1.4rem; color: var(--terra); width: 32px; flex: none; font-weight: 700;">04</span>
+            <div>
+              <div style="font-weight: 700; font-size: 1.05rem; color: var(--ink);">Progreso a tu propio ritmo</div>
+              <div style="font-size: 0.95rem; color: var(--ink-soft); margin-top: 3px;">Avanza según tus tiempos, con seguimiento continuo y certificación al concluir.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="wrap" style="padding-top: 40px; padding-bottom: 80px;">
+    <div style="border-radius: 26px; overflow: hidden; position: relative; padding: clamp(40px, 6vw, 76px); background: var(--terra-deep); color: #fff;">
+      <div style="position: absolute; inset: 0; background: repeating-linear-gradient(135deg, transparent 0 14px, rgba(255,255,255,0.03) 14px 15px);"></div>
+      <div style="position: relative; max-width: 620px;">
+        <h2 style="font-size: clamp(2rem, 4vw, 3.2rem); color: #fff;">
+          Tu negocio ya existe.<br />Ahora constrúyelo como empresa.
+        </h2>
+        <p class="lede" style="color: rgba(255,255,255,0.85); margin-top: 18px;">
+          El acompañamiento estratégico y la estructura que tu negocio necesita para crecer con orden y rentabilidad.
+        </p>
+        <a href="https://imperio-limpio.aprenzi.com/registro" class="btn btn-lg" style="margin-top: 30px; background: #fff; color: var(--terra-deep); font-weight: 700;">
+          Comenzar mi mentoría 
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="foot">
+    <div class="wrap" style="padding: 64px 28px 40px;">
+      <div style="display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 36px; align-items: start;" class="foot-grid">
+        <div>
+          <div style="margin-bottom: 16px;">
+            <img src="assets/logos/logo_horizontal_white.svg" alt="Imperio Limpio" style="height: 38px; width: auto;" />
+          </div>
+          <p style="max-width: 280px; font-size: 0.95rem; line-height: 1.6; opacity: 0.8;">
+            Mentoría profesional para emprendedores que dejan de operar y empiezan a liderar su empresa de limpieza.
+          </p>
+        </div>
+
+        <div>
+          <div style="font-family: var(--mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.6; margin-bottom: 16px;">Programa</div>
+          <div style="display: flex; flex-direction: column; gap: 10px; font-size: 0.92rem;">
+            <a href="#programa" style="opacity: 0.85;">El programa</a>
+            <a href="#como" style="opacity: 0.85;">Cómo funciona</a>
+          </div>
+        </div>
+
+        <div>
+          <div style="font-family: var(--mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.6; margin-bottom: 16px;">Plataforma</div>
+          <div style="display: flex; flex-direction: column; gap: 10px; font-size: 0.92rem;">
+            <a href="https://imperio-limpio.aprenzi.com/login" style="opacity: 0.85;">Iniciar sesión</a>
+            <a href="https://imperio-limpio.aprenzi.com/registro" style="opacity: 0.85;">Inscripción</a>
+            <a href="https://aprenzi.com" target="_blank" rel="noopener" style="opacity: 0.85;">Powered by Aprenzi</a>
+          </div>
+        </div>
+
+        <div>
+          <div style="font-family: var(--mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.6; margin-bottom: 16px;">Legal</div>
+          <div style="display: flex; flex-direction: column; gap: 10px; font-size: 0.92rem;">
+            <a href="https://imperio-limpio.aprenzi.com/terminos" target="_blank" style="opacity: 0.85;">Términos</a>
+            <a href="https://imperio-limpio.aprenzi.com/privacidad" target="_blank" style="opacity: 0.85;">Privacidad</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="height: 1px; background: rgba(255,255,255,0.12); margin: 44px 0 24px;"></div>
+      <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: 0.85rem; opacity: 0.65;">
+        <span>© 2026 Imperio Limpio Business Academy. Todos los derechos reservados.</span>
+        <span style="font-family: var(--mono); letter-spacing: 0.06em;">CONSTRUYE LA EMPRESA QUE QUIERES LIDERAR</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    // Dark mode toggle
+    const themeToggleBtn = document.getElementById('themeToggle');
+    const moonIcon = document.getElementById('moonIcon');
+    const sunIcon = document.getElementById('sunIcon');
+    const logoLight = document.querySelector('.logo-light');
+    const logoDark = document.querySelector('.logo-dark');
+
+    function setTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('il_theme', theme);
+      if (theme === 'dark') {
+        moonIcon.style.display = 'none';
+        sunIcon.style.display = 'block';
+        if (logoLight) logoLight.style.display = 'none';
+        if (logoDark) logoDark.style.display = 'block';
+      } else {
+        moonIcon.style.display = 'block';
+        sunIcon.style.display = 'none';
+        if (logoLight) logoLight.style.display = 'block';
+        if (logoDark) logoDark.style.display = 'none';
+      }
+    }
+
+    const savedTheme = localStorage.getItem('il_theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    setTheme(savedTheme);
+
+    themeToggleBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      setTheme(current === 'dark' ? 'light' : 'dark');
+    });
+  </script>
+</body>
+</html>
